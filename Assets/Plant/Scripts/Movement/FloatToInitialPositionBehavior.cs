@@ -11,7 +11,7 @@ namespace GoatRock
         [SerializeField]
         public FloatToVector3Event OnInitialPositionSet;
 
-        protected override void Start()
+        protected void Start()
         {
             if(WorldSpace)
             {
@@ -28,7 +28,7 @@ namespace GoatRock
             {
                 transform.position = CustomInitialPositionVector3;
             }
-
+                    
             if (StartInRandomSpot)
             {
                 if(SpawnInRandomSpotScript != null)

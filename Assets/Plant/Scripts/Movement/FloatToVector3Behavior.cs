@@ -29,7 +29,7 @@ namespace GoatRock
         [SerializeField]
         private Vector3 velocity = Vector3.zero;
 
-        protected virtual void Start()
+        protected virtual void OnEnable()
         {
             InitialRotation = transform.localEulerAngles;
 
