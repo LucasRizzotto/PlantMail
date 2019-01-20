@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.XR.MagicLeap;
 
 [RequireComponent(typeof(FloatToVector3Behavior))]
@@ -18,6 +19,10 @@ public class PinchGrabbable : MonoBehaviour {
     [Space(5)]
     public FloatToVector3Behavior FloatingBehavior;
     public bool Grabbed = false;
+    ///-----------Jacks questionable code ----------------------------------------
+    public UnityEvent onPicked;
+    public bool onPlant = true;
+    ///-----------Jacks questionable code ----------------------------------------
 
     public GameObject PlantZone;
     public List<GameObject> FingerTriggers = new List<GameObject>();
@@ -111,6 +116,7 @@ public class PinchGrabbable : MonoBehaviour {
             {
                 if (GetGesture(MLHands.Left, MLHandKeyPose.Ok) || GetGesture(MLHands.Left, MLHandKeyPose.Pinch))
                 {
+
                     TryGrab();
                 }
             }
@@ -147,6 +153,13 @@ public class PinchGrabbable : MonoBehaviour {
         FloatingBehavior.enabled = true;
         Grabbed = true;
         ThisAnimator.SetBool("Grabbed", Grabbed);
+
+        if (onPlant)
+        {
+            onPicked.Invoke();
+        }
+
+        onPlant = false;
 
         if (!PlantZone)
         {

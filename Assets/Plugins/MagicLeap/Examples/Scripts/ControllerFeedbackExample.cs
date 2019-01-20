@@ -10,8 +10,10 @@
 // ---------------------------------------------------------------------
 // %BANNER_END%
 
+using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.XR.MagicLeap;
 
 namespace MagicLeap
@@ -40,6 +42,12 @@ namespace MagicLeap
         private const int MAX_LED_INDEX = (int)(MLInputControllerFeedbackPatternLED.Clock6And12);
         private const int LED_INDEX_DELTA = MAX_LED_INDEX - MIN_LED_INDEX;
         #endregion
+
+        [Serializable]
+        public class ControllerEvent : UnityEvent { }
+        public ControllerEvent PrimaryTriggerEvent;
+        public ControllerEvent SecondaryTriggerEvent;
+
 
         #region Unity Methods
         /// <summary>
@@ -150,6 +158,8 @@ namespace MagicLeap
             {
                 // Demonstrate haptics using callbacks.
                 controller.StartFeedbackPatternVibe(MLInputControllerFeedbackPatternVibe.ForceUp, MLInputControllerFeedbackIntensity.Medium);
+                Debug.Log("Secondary Trigger Pressed");
+                SecondaryTriggerEvent.Invoke();
             }
         }
 
@@ -165,6 +175,8 @@ namespace MagicLeap
             {
                 MLInputControllerFeedbackIntensity intensity = (MLInputControllerFeedbackIntensity)((int)(value * 2.0f));
                 controller.StartFeedbackPatternVibe(MLInputControllerFeedbackPatternVibe.Buzz, intensity);
+                PrimaryTriggerEvent.Invoke();
+                Debug.Log("Primary Trigger Pressed");   
             }
         }
         #endregion

@@ -13,9 +13,14 @@ namespace GoatRock
             Target = Camera.main.transform;
 
             if (StartLookAt) {
-                transform.LookAt(Target);
-                transform.rotation *= Quaternion.Euler(_rotationOffset);
+                LookAtMethod();
             }
+        }
+
+        public void LookAtMethod()
+        {
+            transform.LookAt(Target);
+            transform.rotation *= Quaternion.Euler(_rotationOffset);
         }
     }
 }

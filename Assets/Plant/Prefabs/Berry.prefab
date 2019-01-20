@@ -244,6 +244,8 @@ GameObject:
   - component: {fileID: 114924752187269806}
   - component: {fileID: 114868564520690630}
   - component: {fileID: 114443084052494038}
+  - component: {fileID: 114945387338311348}
+  - component: {fileID: 114637496835594032}
   m_Layer: 11
   m_Name: Berry
   m_TagString: Untagged
@@ -335,7 +337,7 @@ Transform:
   m_GameObject: {fileID: 1694704938134582}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 0.9999999, z: 0.9999999}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 4597730078792674}
   m_RootOrder: 1
@@ -346,15 +348,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1709508654635982}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.11, y: -0.17, z: 0.44}
-  m_LocalScale: {x: 0.025, y: 0.025, z: 0.025}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 0, y: 0.526, z: -0.5698}
+  m_LocalScale: {x: 0.099999994, y: 0.099999994, z: 0.099999994}
   m_Children:
   - {fileID: 4597730078792674}
   - {fileID: 4293307806177012}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!4 &4209580396988518
 Transform:
   m_ObjectHideFlags: 1
@@ -393,7 +395,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1500225650061314}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.89, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224110008445035442}
@@ -406,7 +408,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1622984344320858}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.00003571738, y: -0.99607944, z: 0.00014781019, w: -0.088463366}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -468,7 +470,7 @@ Transform:
   m_GameObject: {fileID: 1079004409306978}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 10.35, y: -0.3, z: 5.58}
-  m_LocalScale: {x: 0.2, y: 25, z: 0.2}
+  m_LocalScale: {x: 0.20000002, y: 0, z: 0.20000002}
   m_Children:
   - {fileID: 4209580396988518}
   m_Father: {fileID: 4293307806177012}
@@ -989,7 +991,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Where are you?
+  m_text: "What part of PlantMail did you make?\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1017,8 +1019,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 0.56
-  m_fontSizeBase: 0.56
+  m_fontSize: 0.38
+  m_fontSizeBase: 0.38
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1055,15 +1057,15 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 8.983987, y: 2.619088, z: 9.860898, w: 2.2731893}
+  m_margin: {x: 8.983987, y: 2.619088, z: 10.427574, w: 2.2731893}
   m_textInfo:
     textComponent: {fileID: 114114472877969600}
-    characterCount: 14
+    characterCount: 38
     spriteCount: 0
-    spaceCount: 2
-    wordCount: 3
+    spaceCount: 7
+    wordCount: 7
     linkCount: 0
-    lineCount: 1
+    lineCount: 2
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
@@ -1244,7 +1246,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Skippy Dinglechalk
+  m_text: Devpost <support@devpost.com>
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1272,8 +1274,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 0.56
-  m_fontSizeBase: 0.56
+  m_fontSize: 0.38
+  m_fontSizeBase: 0.38
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1313,10 +1315,10 @@ MonoBehaviour:
   m_margin: {x: 8.983987, y: 2.619088, z: 9.860898, w: 2.2731893}
   m_textInfo:
     textComponent: {fileID: 114491659811436192}
-    characterCount: 18
+    characterCount: 29
     spriteCount: 0
     spaceCount: 1
-    wordCount: 2
+    wordCount: 4
     linkCount: 0
     lineCount: 1
     pageCount: 1
@@ -1440,7 +1442,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 8.983987, y: 2.619088, z: 10.288605, w: 1.9195223}
+  m_margin: {x: 8.983987, y: 2.619088, z: 10.288605, w: 1.7880893}
   m_textInfo:
     textComponent: {fileID: 114526636664122774}
     characterCount: 356
@@ -1469,6 +1471,20 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   m_maskType: 0
+--- !u!114 &114637496835594032
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1709508654635982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6eff9f2414c538d479d06609a7682ff9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GoldBerryActive: 0
+  TargetRenderer: {fileID: 23952280701517788}
+  GoldMaterial: {fileID: 2100000, guid: 33e1b6b950861eb40b3e176520f39227, type: 2}
 --- !u!114 &114854280307294262
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1488,7 +1504,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Lucas Rizzotto
+  m_text: Bambalam Zengleworth
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1516,8 +1532,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 0.56
-  m_fontSizeBase: 0.56
+  m_fontSize: 0.38
+  m_fontSizeBase: 0.38
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1557,7 +1573,7 @@ MonoBehaviour:
   m_margin: {x: 8.983987, y: 2.619088, z: 9.860898, w: 2.2731893}
   m_textInfo:
     textComponent: {fileID: 114854280307294262}
-    characterCount: 14
+    characterCount: 20
     spriteCount: 0
     spaceCount: 1
     wordCount: 2
@@ -1594,14 +1610,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba1947380a42b4a459d47b1001a959a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  From: Skippy Dinglechalk
-  To: Bambalam Zengleworth
-  Subject: Who let the dogs out?
-  Body: 'Donec efficitur id eros a fermentum. Duis neque erat, facilisis sit amet
-    rutrum ut, ultrices eu quam. Nam id sodales nunc. Etiam eu condimentum libero.
-    In pharetra faucibus mauris, sit amet tempus dui blandit quis. Fusce dignissim
-    lectus quis diam finibus aliquam. Cras ac tellus tempus, efficitur libero et,
-    rutrum metus. Nunc imperdiet ultricies tempus. '
+  From: support@devpost.com
+  To: contact@lucasrizzotto.com
+  Subject: What part of PlantMail did you make?
+  Body: "Lucas, tell your fellow hackers how you helped build PlantMail.\r\n\r\nDid
+    you work on the front end, integrate a tricky API, or hack on hardware? What are
+    you most proud of? What did you learn during the process?"
   FromTMP: {fileID: 114491659811436192}
   ToTMP: {fileID: 114854280307294262}
   SubjectTMP: {fileID: 114114472877969600}
@@ -1741,6 +1755,23 @@ MonoBehaviour:
   FoldEmail: {fileID: 114142729842690984}
   FloatingBehavior: {fileID: 114924752187269806}
   Grabbed: 0
+  onPicked:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: ShrinkPlant
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  onPlant: 1
   PlantZone: {fileID: 0}
   FingerTriggers: []
 --- !u!114 &114871015399272602
@@ -1893,6 +1924,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotationOffset: {x: 0, y: 0, z: 0}
+--- !u!114 &114945387338311348
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1709508654635982}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c1f77535ec4d5342b7849b73a75ce4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsFloatingEnabled: 1
+  PositionSpeed: 8
+  LerpAngles: 1
+  AngleSpeed: 0.6
+  WorldSpace: 1
+  TargetPosition: {x: 0, y: 0, z: 0}
+  StartInRandomSpot: 0
+  SpawnInRandomSpotScript: {fileID: 0}
+  CustomInitialPosition: 0
+  CustomInitialPositionVector3: {x: 0, y: 0, z: 0}
+  CustomTarget: 0
+  CustomTargetObject: {fileID: 0}
+  velocity: {x: 0, y: 0, z: 0}
 --- !u!135 &135604507772446734
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -1998,7 +2053,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 36.21, y: 0.64000106}
+  m_AnchoredPosition: {x: 36.21, y: 0.33}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224538809066697806
@@ -2016,7 +2071,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 33.95, y: 2.4100008}
+  m_AnchoredPosition: {x: 33.95, y: 2.14}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224754797640536738
@@ -2052,7 +2107,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 35.22, y: 2.41}
+  m_AnchoredPosition: {x: 35.22, y: 2.17}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224878946468571392

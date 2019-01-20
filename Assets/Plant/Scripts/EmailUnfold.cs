@@ -40,7 +40,6 @@ public class EmailUnfold : MonoBehaviour {
     public void Unfold()
     {
         Debug.Log("Unfolding e-mail...");
-        EmailAnimator.SetTrigger(UnfoldEmailTrigger);
         Folded = false;
         EmailAnimator.SetBool("Folded", !Folded);
     }
