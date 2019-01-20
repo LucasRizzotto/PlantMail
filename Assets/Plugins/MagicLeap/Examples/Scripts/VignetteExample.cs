@@ -41,14 +41,14 @@ namespace MagicLeap
         {
             if (_controllerConnectionHandler == null)
             {
-                Debug.LogError("Error VignetteExample._controllerConnectionHandler not set, disabling script.");
+                // Debug.LogError("Error VignetteExample._controllerConnectionHandler not set, disabling script.");
                 enabled = false;
                 return;
             }
 
             if (_statusLabel == null)
             {
-                Debug.LogError("Error: VignetteExample._statusLabel is not set, disabling script.");
+                // Debug.LogError("Error: VignetteExample._statusLabel is not set, disabling script.");
                 enabled = false;
                 return;
             }

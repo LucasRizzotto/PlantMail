@@ -73,7 +73,10 @@ public class PinchGrabbable : MonoBehaviour {
         {
             if (FingerTriggers.Count > 1)
             {
-                TryGrab();
+                if (GetGesture(MLHands.Left, MLHandKeyPose.Ok) || GetGesture(MLHands.Left, MLHandKeyPose.Pinch))
+                {
+                    TryGrab();
+                }
             }
         }
         else
@@ -84,14 +87,14 @@ public class PinchGrabbable : MonoBehaviour {
 
                 if (FingerTriggers[0].layer == LeftFingerLayer)
                 {
-                    if (!GetGesture(MLHands.Left, MLHandKeyPose.Ok) && !GetGesture(MLHands.Left, MLHandKeyPose.C) && !GetGesture(MLHands.Left, MLHandKeyPose.Pinch))
+                    if (!GetGesture(MLHands.Left, MLHandKeyPose.Ok) && !GetGesture(MLHands.Left, MLHandKeyPose.Pinch))
                     {
                         TryRelease();
                     }
                 }
                 else
                 {
-                    if (!GetGesture(MLHands.Right, MLHandKeyPose.Ok) && !GetGesture(MLHands.Right, MLHandKeyPose.C) && !GetGesture(MLHands.Right, MLHandKeyPose.Pinch))
+                    if (!GetGesture(MLHands.Right, MLHandKeyPose.Ok) && !GetGesture(MLHands.Right, MLHandKeyPose.Pinch))
                     {
                         TryRelease();
                     }
