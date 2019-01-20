@@ -142,6 +142,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1622984344320858
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4597730078792674}
+  - component: {fileID: 114940823033827102}
+  m_Layer: 0
+  m_Name: GeometryLookAt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1672985279341392
 GameObject:
   m_ObjectHideFlags: 1
@@ -178,7 +194,7 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &1694704938134582
 GameObject:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
@@ -186,7 +202,6 @@ GameObject:
   - component: {fileID: 4028431298183122}
   - component: {fileID: 33007333400798774}
   - component: {fileID: 23727142280613142}
-  - component: {fileID: 114509785271409712}
   - component: {fileID: 135516214900703224}
   m_Layer: 0
   m_Name: Geometry
@@ -206,6 +221,7 @@ GameObject:
   - component: {fileID: 114505192085458440}
   - component: {fileID: 95679073081979238}
   - component: {fileID: 114142729842690984}
+  - component: {fileID: 114860484557653818}
   m_Layer: 0
   m_Name: Berry
   m_TagString: Untagged
@@ -295,13 +311,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1694704938134582}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4118583044948668}
+  m_Father: {fileID: 4597730078792674}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!4 &4118583044948668
 Transform:
   m_ObjectHideFlags: 1
@@ -309,10 +325,10 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1709508654635982}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.245, y: 0.837, z: -0.2802}
+  m_LocalPosition: {x: -1.245, y: 0.837, z: -0.006}
   m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_Children:
-  - {fileID: 4028431298183122}
+  - {fileID: 4597730078792674}
   - {fileID: 4293307806177012}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -361,6 +377,20 @@ Transform:
   - {fileID: 224110008445035442}
   m_Father: {fileID: 4293307806177012}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4597730078792674
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1622984344320858}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4028431298183122}
+  m_Father: {fileID: 4118583044948668}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4647456588981170
 Transform:
@@ -1198,18 +1228,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SizeMultiplier: 1
---- !u!114 &114509785271409712
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1694704938134582}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71f0985da53e122468430a10dfc80456, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _rotationOffset: {x: 0, y: 0, z: 0}
 --- !u!114 &114526636664122774
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1456,6 +1474,32 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   m_maskType: 0
+--- !u!114 &114860484557653818
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1709508654635982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba1947380a42b4a459d47b1001a959a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  From: Skippy Dinglechalk
+  To: Bambalam Zengleworth
+  Subject: Who let the dogs out?
+  Body: Donec efficitur id eros a fermentum. Duis neque erat, facilisis sit amet rutrum
+    ut, ultrices eu quam. Nam id sodales nunc. Etiam eu condimentum libero. In pharetra
+    faucibus mauris, sit amet tempus dui blandit quis. Fusce dignissim lectus quis
+    diam finibus aliquam. Cras ac tellus tempus, efficitur libero et, rutrum metus.
+    Nunc imperdiet ultricies tempus. Duis at vehicula neque. Pellentesque aliquet
+    at orci at dignissim. Aenean tincidunt fringilla accumsan. Praesent rhoncus eros
+    urna, nec accumsan diam facilisis sit amet. Integer a finibus mauris, nec consectetur
+    ante.
+  FromTMP: {fileID: 114491659811436192}
+  ToTMP: {fileID: 114854280307294262}
+  SubjectTMP: {fileID: 114114472877969600}
+  BodyTMP: {fileID: 114526636664122774}
 --- !u!114 &114864663034291206
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1684,6 +1728,18 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   m_maskType: 0
+--- !u!114 &114940823033827102
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1622984344320858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71f0985da53e122468430a10dfc80456, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotationOffset: {x: 0, y: 0, z: 0}
 --- !u!135 &135516214900703224
 SphereCollider:
   m_ObjectHideFlags: 1
