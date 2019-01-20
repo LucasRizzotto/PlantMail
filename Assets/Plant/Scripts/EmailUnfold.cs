@@ -37,18 +37,19 @@ public class EmailUnfold : MonoBehaviour {
         }
     }
 
-    void Unfold()
+    public void Unfold()
     {
         Debug.Log("Unfolding e-mail...");
         EmailAnimator.SetTrigger(UnfoldEmailTrigger);
         Folded = false;
+        EmailAnimator.SetBool("Folded", !Folded);
     }
 
-    void Fold()
+    public void Fold()
     {
         Debug.Log("Folding back e-mail...");
-        EmailAnimator.SetTrigger(FoldEmailTrigger);
         Folded = true;
+        EmailAnimator.SetBool("Folded", !Folded);
     }
 
 }

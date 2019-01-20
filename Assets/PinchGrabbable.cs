@@ -8,13 +8,18 @@ using UnityEngine.XR.MagicLeap;
 public class PinchGrabbable : MonoBehaviour {
 
     public LayerMask GrabLayers;
+    public LayerMask PlantLayers;
+    [Space(5)]
     public Animator ThisAnimator;
+    public EmailUnfold FoldEmail;
+    [Space(5)]
     public static int LeftFingerLayer = 12;
     public static int RightFingerLayer = 13;
     [Space(5)]
     public FloatToVector3Behavior FloatingBehavior;
     public bool Grabbed = false;
 
+    public GameObject PlantZone;
     public List<GameObject> FingerTriggers = new List<GameObject>();
 
     private void Reset()
@@ -30,12 +35,22 @@ public class PinchGrabbable : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
+        // pinching
         if(Helpers.IsInLayerMask(other.gameObject.layer, GrabLayers))
         {
             if(!FingerTriggers.Contains(other.gameObject))
             {
                 FingerTriggers.Add(other.gameObject);
                 Debug.Log("Finger entered! " + other.gameObject.name);
+            }
+        }
+
+        // plant zone
+        if (Helpers.IsInLayerMask(other.gameObject.layer, PlantLayers))
+        {
+            if(PlantZone != other.gameObject)
+            {
+                PlantZone = other.gameObject;
             }
         }
     }
@@ -48,6 +63,27 @@ public class PinchGrabbable : MonoBehaviour {
             {
                 FingerTriggers.Add(other.gameObject);
                 Debug.Log("Finger entered! " + other.gameObject.name);
+            }
+        }
+
+        // plant zone
+        if (Helpers.IsInLayerMask(other.gameObject.layer, PlantLayers))
+        {
+            if (PlantZone != other.gameObject)
+            {
+                PlantZone = other.gameObject;
+            }
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        // plant zone
+        if (Helpers.IsInLayerMask(other.gameObject.layer, PlantLayers))
+        {
+            if (PlantZone == other.gameObject)
+            {
+                PlantZone = null;
             }
         }
     }
@@ -111,6 +147,11 @@ public class PinchGrabbable : MonoBehaviour {
         FloatingBehavior.enabled = true;
         Grabbed = true;
         ThisAnimator.SetBool("Grabbed", Grabbed);
+
+        if (!PlantZone)
+        {
+            FoldEmail.Unfold();
+        }
     }
 
     void TryRelease()
@@ -120,8 +161,12 @@ public class PinchGrabbable : MonoBehaviour {
         Grabbed = false;
         ThisAnimator.SetBool("Grabbed", Grabbed);
         FingerTriggers.Clear();
-    }
 
+        if(!PlantZone)
+        {
+            FoldEmail.Fold();
+        }
+    }
 
     private bool GetGesture(MLHand hand, MLHandKeyPose type)
     {

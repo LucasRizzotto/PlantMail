@@ -243,6 +243,7 @@ GameObject:
   - component: {fileID: 54695906795131666}
   - component: {fileID: 114924752187269806}
   - component: {fileID: 114868564520690630}
+  - component: {fileID: 114443084052494038}
   m_Layer: 11
   m_Name: Berry
   m_TagString: Untagged
@@ -374,8 +375,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1616404166774656}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.35, y: 0.3, z: -5.58}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -6.22, y: 0.3, z: -3.34}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_Children:
   - {fileID: 4721719968341490}
   - {fileID: 4647456588981170}
@@ -1212,6 +1213,18 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   m_maskType: 0
+--- !u!114 &114443084052494038
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1709508654635982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71f0985da53e122468430a10dfc80456, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotationOffset: {x: 0, y: 190, z: 0}
 --- !u!114 &114491659811436192
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1721,9 +1734,14 @@ MonoBehaviour:
   GrabLayers:
     serializedVersion: 2
     m_Bits: 12288
+  PlantLayers:
+    serializedVersion: 2
+    m_Bits: 0
   ThisAnimator: {fileID: 95014535914851242}
+  FoldEmail: {fileID: 114142729842690984}
   FloatingBehavior: {fileID: 114924752187269806}
   Grabbed: 0
+  PlantZone: {fileID: 0}
   FingerTriggers: []
 --- !u!114 &114871015399272602
 MonoBehaviour:
