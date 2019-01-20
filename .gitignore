@@ -8,6 +8,10 @@ Assets/AssetStoreTools*
 Assets/UtopiaWorx
 Assets/ExternalAssets/UtopiaWorx
 Assets/UserRecordings
+Assets/Plugins/LowPolyWaterv2
+Assets/Plugins/LowPolyWaterv2*
+LowPolyWaterv2*
+LowPolyWaterv2/
 
 # Visual Studio cache directory
 .vs/
