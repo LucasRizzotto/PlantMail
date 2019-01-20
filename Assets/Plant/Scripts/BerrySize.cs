@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BerrySize : MonoBehaviour {
 
-    [Range(1f, 2f)]
+    [Range(1f, 3f)]
     public float SizeMultiplier = 1f;
 
     private Vector3 InitialScale;

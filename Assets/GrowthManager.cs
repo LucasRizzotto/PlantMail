@@ -14,11 +14,13 @@ public class GrowthManager : MonoBehaviour {
 	private float sizeIncrement = 0.1f;
 	private Plant plant;
 	private ThriveManager TM;
-	private SeedSpawner sSpawn;
+	// private SeedSpawner sSpawn;
 	private float plantRadius;
 	private AudioSource audi;
 	private float startPitch = 1.6f;
 	private float pitchIncrement = 0.13f;
+	private SeedManager SM;
+
 
 
 
@@ -27,10 +29,10 @@ public class GrowthManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		TM = GetComponentInParent<ThriveManager>();
+		SM = TM.gameObject.GetComponentInChildren<SeedManager>();
 		plantSize = TM.emailsInInbox;
 		plant = TM.plant;
 		plantRadius = 1f;
-		sSpawn = TM.gameObject.GetComponentInChildren<SeedSpawner>();
 		audi = GetComponent<AudioSource>();
 		audi.pitch = startPitch;
 
@@ -59,7 +61,7 @@ public class GrowthManager : MonoBehaviour {
 		plant.gameObject.transform.Translate(Vector3.up * heightScale, Space.World);
 		onSizeChanges.Invoke();
 		plantRadius += Mathf.Pow(sizeIncrement, 3f);
-		//sSpawn.SpawnSeed();
+		SM.Push();
 		audi.pitch -= pitchIncrement;
 		audi.Play();
 	}
@@ -71,7 +73,7 @@ public class GrowthManager : MonoBehaviour {
 		plant.gameObject.transform.Translate(Vector3.down * heightScale, Space.World);
 		onSizeChanges.Invoke();
 		plantRadius -= Mathf.Pow(sizeIncrement, 3f);
-		//sSpawn.DespawnSeed();
+		SM.Pull();
 		audi.pitch += pitchIncrement;
 		audi.Play();
 	}

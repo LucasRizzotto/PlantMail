@@ -21,6 +21,8 @@ public class PinchGrabbable : MonoBehaviour {
     public bool Grabbed = false;
     ///-----------Jacks questionable code ----------------------------------------
     public UnityEvent onPicked;
+    public UnityEvent onDefaultGrab;
+    public UnityEvent onGrabEnd;
     public bool onPlant = true;
     ///-----------Jacks questionable code ----------------------------------------
 
@@ -91,6 +93,15 @@ public class PinchGrabbable : MonoBehaviour {
                 PlantZone = null;
             }
         }
+
+        // pinching
+        if (Helpers.IsInLayerMask(other.gameObject.layer, GrabLayers))
+        {
+            if (FingerTriggers.Contains(other.gameObject))
+            {
+                FingerTriggers.Remove(other.gameObject);
+            }
+        }
     }
 
     /*
@@ -109,14 +120,16 @@ public class PinchGrabbable : MonoBehaviour {
 
     private void FixedUpdate()
     {
+ 
         // If two finger triggers are here, we're being pinched!
-        if(!Grabbed)
+        if (!Grabbed)
         {
+            
+
             if (FingerTriggers.Count > 1)
             {
-                if (GetGesture(MLHands.Left, MLHandKeyPose.Ok) || GetGesture(MLHands.Left, MLHandKeyPose.Pinch))
+                if (GetGesture(MLHands.Left, MLHandKeyPose.Ok) || GetGesture(MLHands.Left, MLHandKeyPose.Pinch) || GetGesture(MLHands.Right, MLHandKeyPose.Ok) || GetGesture(MLHands.Right, MLHandKeyPose.Pinch))
                 {
-
                     TryGrab();
                 }
             }
@@ -125,8 +138,12 @@ public class PinchGrabbable : MonoBehaviour {
         {   
             if(FingerTriggers.Count > 0)
             {
-                FloatingBehavior.TargetPosition = FingerTriggers[0].transform.position;
+                if(GetGesture(MLHands.Left, MLHandKeyPose.Ok) || GetGesture(MLHands.Left, MLHandKeyPose.Pinch) || GetGesture(MLHands.Right, MLHandKeyPose.Ok) || GetGesture(MLHands.Right, MLHandKeyPose.Pinch))
+                {
+                    FloatingBehavior.TargetPosition = FingerTriggers[0].transform.position;
+                }
 
+                
                 if (FingerTriggers[0].layer == LeftFingerLayer)
                 {
                     if (!GetGesture(MLHands.Left, MLHandKeyPose.Ok) && !GetGesture(MLHands.Left, MLHandKeyPose.Pinch))
@@ -142,9 +159,7 @@ public class PinchGrabbable : MonoBehaviour {
                     }
                 }
             }
-
         }
-        
     }
 
     void TryGrab()
@@ -158,8 +173,12 @@ public class PinchGrabbable : MonoBehaviour {
         {
             onPicked.Invoke();
         }
+        else
+        {
+            onDefaultGrab.Invoke();
+        }
 
-        onPlant = false;
+onPlant = false;
 
         if (!PlantZone)
         {
@@ -169,13 +188,15 @@ public class PinchGrabbable : MonoBehaviour {
 
     void TryRelease()
     {
+        onGrabEnd.Invoke();
+
         Debug.Log("RELEASED!");
         FloatingBehavior.enabled = false;
         Grabbed = false;
         ThisAnimator.SetBool("Grabbed", Grabbed);
         FingerTriggers.Clear();
 
-        if(!PlantZone)
+        if (!PlantZone)
         {
             FoldEmail.Fold();
         }

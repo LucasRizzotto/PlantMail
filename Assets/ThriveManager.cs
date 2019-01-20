@@ -17,11 +17,11 @@ public class ThriveManager : MonoBehaviour {
 
 	public int maxEmailCount = 20;
 
-
 	// Use this for initialization
 	void Start () {
 		//plant = GetComponentInChildren<Plant>();
 		GM = GetComponentInChildren<GrowthManager>();
+
 		ChangeNumberOfEmails(INBOXStartSize);
 
 

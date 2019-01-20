@@ -1,0 +1,410 @@
+{
+ "entries": [
+  {
+   "compression": 8,
+   "hash": "5925de9f4d7b83c65d1fd7b25ced5f0bf8c27e73",
+   "pkgpath": "bin/libc++_shared.so",
+   "size": 976832,
+   "src": "C:/Users/lucas/MagicLeap/mlsdk/v0.19.0/lumin/stl/libc++/lib/libc++_shared.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "D:\\Git\\MIT\\PlantMail\\Assets\\Plugins\\MagicLeap\\Certificate\\mithackathon2019.cert"
+    },
+    "taildata": {
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "29578490bf68aabba3417451abd559092b211c24",
+   "xfrm_path": "D:/Git/MIT/PlantMail/.out/.cache/release_lumin_clang-3.8_aarch64/com.company.productname-3e0b8210e67b29a3\\libc++_shared.so-eb3d5828ea068a53",
+   "xfrm_size": 977590
+  },
+  {
+   "compression": 8,
+   "hash": "850842fff5d0a874e35fb6a192bb5a555d429cbe",
+   "pkgpath": "Data/095890d8c9bde1a45b549a17e6e6f961",
+   "size": 5036,
+   "src": "D:/Git/MIT/PlantMail/Temp/StagingArea/Data/095890d8c9bde1a45b549a17e6e6f961"
+  },
+  {
+   "compression": 8,
+   "hash": "d5e646475dbeb0c11bd6e528935f4c7d12734ae9",
+   "pkgpath": "Data/128e987d567d4e2c824d754223b3f3b0",
+   "size": 12080,
+   "src": "D:/Git/MIT/PlantMail/Temp/StagingArea/Data/128e987d567d4e2c824d754223b3f3b0"
+  },
+  {
+   "compression": 8,
+   "hash": "f25fe34f77a586c6892238c210279c698618d975",
+   "pkgpath": "Data/1e3b057af24249748ff873be7fafee47",
+   "size": 14260,
+   "src": "D:/Git/MIT/PlantMail/Temp/StagingArea/Data/1e3b057af24249748ff873be7fafee47"
+  },
+  {
+   "compression": 8,
+   "hash": "46aee3d4dbc4bc0659224322ae8a3b1c9f0097a9",
+   "pkgpath": "Data/3997e2241185407d80309a82f9148466",
+   "size": 4120,
+   "src": "D:/Git/MIT/PlantMail/Temp/StagingArea/Data/3997e2241185407d80309a82f9148466"
+  },
+  {
+   "compression": 8,
+   "hash": "7cca85f06399543c04553b4f096ca685f30e3098",
+   "pkgpath": "Data/3f5b5dff67a942289a9defa416b206f3",
+   "size": 4344,
+   "src": "D:/Git/MIT/PlantMail/Temp/StagingArea/Data/3f5b5dff67a942289a9defa416b206f3"
+  },
+  {
+   "compression": 8,
+   "hash": "168979063d4b5b1c4321e4097ebc2b868650ba85",
+   "pkgpath": "Data/407bc68d299748449bbf7f48ee690f8d",
+   "size": 4112,
+   "src": "D:/Git/MIT/PlantMail/Temp/StagingArea/Data/407bc68d299748449bbf7f48ee690f8d"
+  },
+  {
+   "compression": 8,
+   "hash": "c07c983bb1ed03e6f69ccaf65b1c55aa736f5993",
+   "pkgpath": "Data/48bb5f55d8670e349b6e614913f9d910",
+   "size": 11944,
+   "src": "D:/Git/MIT/PlantMail/Temp/StagingArea/Data/48bb5f55d8670e349b6e614913f9d910"
+  },
+  {
+   "compression": 8,
+   "hash": "271488526c546badb1ef05396dc25f26cc5b633e",
+   "pkgpath": "Data/68e6db2ebdc24f95958faec2be5558d6",
+   "size": 18080,
+   "src": "D:/Git/MIT/PlantMail/Temp/StagingArea/Data/68e6db2ebdc24f95958faec2be5558d6"
+  },
+  {
+   "compression": 8,
+   "hash": "dac5d05696539ae666e6ea9fb741894840fb4634",
+   "pkgpath": "Data/79459efec17a4d00a321bdcc27bbc385",
+   "size": 5648,
+   "src": "D:/Git/MIT/PlantMail/Temp/StagingArea/Data/79459efec17a4d00a321bdcc27bbc385"
+  },
+  {
+   "compression": 8,
+   "hash": "428acb21f4ac56ecb102114ddf619e82276ad905",
+   "pkgpath": "Data/85187c2149c549c5b33f0cdb02836b17",
+   "size": 21992,
+   "src": "D:/Git/MIT/PlantMail/Temp/StagingArea/Data/85187c2149c549c5b33f0cdb02836b17"
+  },
+  {
+   "compression": 8,
+   "hash": "8c5f269f76eb7d7eed5a24c492d92f109edef458",
+   "pkgpath": "Data/Managed/Metadata/global-metadata.dat",
+   "size": 3585356,
+   "src": "D:/Git/MIT/PlantMail/Temp/StagingArea/Data/Managed/Metadata/global-metadata.dat"
+  },
+  {
+   "compression": 8,
+   "hash": "76f8d7b4e3d2bc6a3874afadc48eee39ca47669d",
+   "pkgpath": "bin/libil2cpp.so",
+   "size": 47249192,
+   "src": "D:/Git/MIT/PlantMail/Temp/StagingArea/Data/Native/libil2cpp.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "D:\\Git\\MIT\\PlantMail\\Assets\\Plugins\\MagicLeap\\Certificate\\mithackathon2019.cert"
+    },
+    "taildata": {
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "eb857b38dec27a403d1059d78a615e105dffc5e1",
+   "xfrm_path": "D:/Git/MIT/PlantMail/.out/.cache/release_lumin_clang-3.8_aarch64/com.company.productname-3e0b8210e67b29a3\\libil2cpp.so-788fa989a666bf28",
+   "xfrm_size": 47249950
+  },
+  {
+   "compression": 8,
+   "hash": "aed32544e1ea67c511396569fcb89b586b15d839",
+   "pkgpath": "bin/UnityEngine.SpatialTracking.dll",
+   "size": 9216,
+   "src": "D:/Git/MIT/PlantMail/Temp/StagingArea/Data/Plugins/UnityEngine.SpatialTracking.dll"
+  },
+  {
+   "compression": 8,
+   "hash": "715f293d231a26472ba1672c3e59f76cb0e5e364",
+   "pkgpath": "bin/UnityEngine.TestRunner.dll",
+   "size": 65536,
+   "src": "D:/Git/MIT/PlantMail/Temp/StagingArea/Data/Plugins/UnityEngine.TestRunner.dll"
+  },
+  {
+   "compression": 8,
+   "hash": "d93ff7b64d92abd6dbb8419c3348ab5f56ad5ec5",
+   "pkgpath": "bin/UnityMagicLeap.so",
+   "size": 728232,
+   "src": "D:/Git/MIT/PlantMail/Temp/StagingArea/Data/Plugins/UnityMagicLeap.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "D:\\Git\\MIT\\PlantMail\\Assets\\Plugins\\MagicLeap\\Certificate\\mithackathon2019.cert"
+    },
+    "taildata": {
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "a2acf0cdc7db66ec394c165142928118f9c0a419",
+   "xfrm_path": "D:/Git/MIT/PlantMail/.out/.cache/release_lumin_clang-3.8_aarch64/com.company.productname-3e0b8210e67b29a3\\UnityMagicLeap.so-acef2b90df565e26",
+   "xfrm_size": 728990
+  },
+  {
+   "compression": 8,
+   "hash": "a765bb75be250a6992c1a46fc23a55501e369b85",
+   "pkgpath": "bin/libml_camera_plugin.so",
+   "size": 14184,
+   "src": "D:/Git/MIT/PlantMail/Temp/StagingArea/Data/Plugins/libml_camera_plugin.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "D:\\Git\\MIT\\PlantMail\\Assets\\Plugins\\MagicLeap\\Certificate\\mithackathon2019.cert"
+    },
+    "taildata": {
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "b3525fdb0ba5bb7f99e4e98d52f5206c2cb8092b",
+   "xfrm_path": "D:/Git/MIT/PlantMail/.out/.cache/release_lumin_clang-3.8_aarch64/com.company.productname-3e0b8210e67b29a3\\libml_camera_plugin.so-acef2b90df565e26",
+   "xfrm_size": 14942
+  },
+  {
+   "compression": 8,
+   "hash": "633780c922a0dbfe032638afff9a25e3fc49219f",
+   "pkgpath": "bin/libml_mediaplayer_plugin.so",
+   "size": 38792,
+   "src": "D:/Git/MIT/PlantMail/Temp/StagingArea/Data/Plugins/libml_mediaplayer_plugin.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "D:\\Git\\MIT\\PlantMail\\Assets\\Plugins\\MagicLeap\\Certificate\\mithackathon2019.cert"
+    },
+    "taildata": {
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "b0aca64a59ead507ba29058d2b408fd61236add7",
+   "xfrm_path": "D:/Git/MIT/PlantMail/.out/.cache/release_lumin_clang-3.8_aarch64/com.company.productname-3e0b8210e67b29a3\\libml_mediaplayer_plugin.so-acef2b90df565e26",
+   "xfrm_size": 39550
+  },
+  {
+   "compression": 8,
+   "hash": "5629c7ff5fb59ddc72778d4b9d3dbadcde480998",
+   "pkgpath": "bin/nunit.framework.dll",
+   "size": 328192,
+   "src": "D:/Git/MIT/PlantMail/Temp/StagingArea/Data/Plugins/nunit.framework.dll"
+  },
+  {
+   "compression": 8,
+   "hash": "e6124da6073b916e29e013cf3ae3f58a4c5fdb0e",
+   "pkgpath": "Data/Resources/mscorlib.dll-resources.dat",
+   "size": 337563,
+   "src": "D:/Git/MIT/PlantMail/Temp/StagingArea/Data/Resources/mscorlib.dll-resources.dat"
+  },
+  {
+   "compression": 8,
+   "hash": "dc1423ee40a78f4701880b37e1f07bc4f3500e9d",
+   "pkgpath": "Data/Resources/unity default resources",
+   "size": 3308004,
+   "src": "D:/Git/MIT/PlantMail/Temp/StagingArea/Data/Resources/unity default resources"
+  },
+  {
+   "compression": 8,
+   "hash": "eed4bbd4f01abc65c2852012647e4ba89afed185",
+   "pkgpath": "Data/Resources/unity_builtin_extra",
+   "size": 394396,
+   "src": "D:/Git/MIT/PlantMail/Temp/StagingArea/Data/Resources/unity_builtin_extra"
+  },
+  {
+   "compression": 8,
+   "hash": "9bbb5e3aae616602db933abd34140e11132fccea",
+   "pkgpath": "Data/UnitySubsystems/Runtime/UnitySubsystemsManifest.json",
+   "size": 438,
+   "src": "D:/Git/MIT/PlantMail/Temp/StagingArea/Data/UnitySubsystems/Runtime/UnitySubsystemsManifest.json"
+  },
+  {
+   "compression": 8,
+   "hash": "b398b780ba54e892af36aae333e0ac30c96a37e4",
+   "pkgpath": "Data/a02a7d8c237544f1962732b55a9aebf1",
+   "size": 14784,
+   "src": "D:/Git/MIT/PlantMail/Temp/StagingArea/Data/a02a7d8c237544f1962732b55a9aebf1"
+  },
+  {
+   "compression": 8,
+   "hash": "a874c1bed9a159eaa003d6d2b5107a63ba738f20",
+   "pkgpath": "Data/bc1ede39bf3643ee8e493720e4259791",
+   "size": 16152,
+   "src": "D:/Git/MIT/PlantMail/Temp/StagingArea/Data/bc1ede39bf3643ee8e493720e4259791"
+  },
+  {
+   "compression": 8,
+   "hash": "b088e6387dff2186fa558355a759723407bcbc0a",
+   "pkgpath": "Data/boot.config",
+   "size": 55,
+   "src": "D:/Git/MIT/PlantMail/Temp/StagingArea/Data/boot.config"
+  },
+  {
+   "compression": 8,
+   "hash": "0811f00d7e23918058da186f76ac9e15cc2becfd",
+   "pkgpath": "Data/c41005c129ba4d66911b75229fd70b45",
+   "size": 5776,
+   "src": "D:/Git/MIT/PlantMail/Temp/StagingArea/Data/c41005c129ba4d66911b75229fd70b45"
+  },
+  {
+   "compression": 8,
+   "hash": "b4ae3b5f8a809c5ca9a69cc01a6e632894ffb0fe",
+   "pkgpath": "Data/cf81c85f95fe47e1a27f6ae460cf182c",
+   "size": 10640,
+   "src": "D:/Git/MIT/PlantMail/Temp/StagingArea/Data/cf81c85f95fe47e1a27f6ae460cf182c"
+  },
+  {
+   "compression": 8,
+   "hash": "c225b255ca1c3c44823a430a615e111192289576",
+   "pkgpath": "Data/d82c1b31c7e74239bff1220585707d2b",
+   "size": 4240,
+   "src": "D:/Git/MIT/PlantMail/Temp/StagingArea/Data/d82c1b31c7e74239bff1220585707d2b"
+  },
+  {
+   "compression": 8,
+   "hash": "4c954af75108f80386bab84b5e4944bb747cbb92",
+   "pkgpath": "Data/d930090c0cd643c7b55f19a38538c162",
+   "size": 4120,
+   "src": "D:/Git/MIT/PlantMail/Temp/StagingArea/Data/d930090c0cd643c7b55f19a38538c162"
+  },
+  {
+   "compression": 8,
+   "hash": "7f9ed8fb676637a1070a47592bbc2aab353cfa57",
+   "pkgpath": "Data/dd89cf5b9246416f84610a006f916af7",
+   "size": 18072,
+   "src": "D:/Git/MIT/PlantMail/Temp/StagingArea/Data/dd89cf5b9246416f84610a006f916af7"
+  },
+  {
+   "compression": 8,
+   "hash": "be70f40ef0781bdeca8d78796fca65e553c8c23b",
+   "pkgpath": "Data/dffef66376be4fa480fb02b19edbe903",
+   "size": 4236,
+   "src": "D:/Git/MIT/PlantMail/Temp/StagingArea/Data/dffef66376be4fa480fb02b19edbe903"
+  },
+  {
+   "compression": 8,
+   "hash": "0d646d8a40d07a78ccdd1438248bc476c64bc23e",
+   "pkgpath": "Data/dffef66376be4fa480fb02b19edbe903.resS",
+   "size": 349552,
+   "src": "D:/Git/MIT/PlantMail/Temp/StagingArea/Data/dffef66376be4fa480fb02b19edbe903.resS"
+  },
+  {
+   "compression": 8,
+   "hash": "61539c063b6b02f8aa97451da7fb01d7426260e0",
+   "pkgpath": "Data/e73a58f6e2794ae7b1b7e50b7fb811b0",
+   "size": 5716,
+   "src": "D:/Git/MIT/PlantMail/Temp/StagingArea/Data/e73a58f6e2794ae7b1b7e50b7fb811b0"
+  },
+  {
+   "compression": 8,
+   "hash": "78c74d0f9760ba2b6d266e58236cd8cfe1cef867",
+   "pkgpath": "Data/f7ada0af4f174f0694ca6a487b8f543d",
+   "size": 36664,
+   "src": "D:/Git/MIT/PlantMail/Temp/StagingArea/Data/f7ada0af4f174f0694ca6a487b8f543d"
+  },
+  {
+   "compression": 8,
+   "hash": "fb0b775b652a9e7f1ef661c6b17e48b7507aa25e",
+   "pkgpath": "Data/f952c082cb03451daed3ee968ac6c63e",
+   "size": 6276,
+   "src": "D:/Git/MIT/PlantMail/Temp/StagingArea/Data/f952c082cb03451daed3ee968ac6c63e"
+  },
+  {
+   "compression": 8,
+   "hash": "b4419df5114f6e1fc711edac0f0042f678852f8f",
+   "pkgpath": "Data/fade42e8bc714b018fac513c043d323b",
+   "size": 4408,
+   "src": "D:/Git/MIT/PlantMail/Temp/StagingArea/Data/fade42e8bc714b018fac513c043d323b"
+  },
+  {
+   "compression": 8,
+   "hash": "661a3e898dbc7c59cbfeafcdea43632de07689cc",
+   "pkgpath": "Data/globalgamemanagers",
+   "size": 43948,
+   "src": "D:/Git/MIT/PlantMail/Temp/StagingArea/Data/globalgamemanagers"
+  },
+  {
+   "compression": 8,
+   "hash": "4fd797a1af6e26a6fedf0809f84a7b7a6f5af694",
+   "pkgpath": "Data/globalgamemanagers.assets",
+   "size": 59472,
+   "src": "D:/Git/MIT/PlantMail/Temp/StagingArea/Data/globalgamemanagers.assets"
+  },
+  {
+   "compression": 8,
+   "hash": "4dd8854ee3b2d3c008d78ed85f061554817e2e04",
+   "pkgpath": "Data/level0",
+   "size": 873412,
+   "src": "D:/Git/MIT/PlantMail/Temp/StagingArea/Data/level0"
+  },
+  {
+   "compression": 8,
+   "hash": "7f11b7105321b468f6388283c661535f3f33708f",
+   "pkgpath": "Data/sharedassets0.assets",
+   "size": 3202344,
+   "src": "D:/Git/MIT/PlantMail/Temp/StagingArea/Data/sharedassets0.assets"
+  },
+  {
+   "compression": 8,
+   "hash": "e96baad567d77af008b8eca2016971befb034f67",
+   "pkgpath": "Data/sharedassets0.assets.resS",
+   "size": 25784052,
+   "src": "D:/Git/MIT/PlantMail/Temp/StagingArea/Data/sharedassets0.assets.resS"
+  },
+  {
+   "compression": 8,
+   "hash": "b022a6972d6b3339e3667bc11dead0bc222908c1",
+   "pkgpath": "Data/sharedassets0.resource",
+   "size": 1358784,
+   "src": "D:/Git/MIT/PlantMail/Temp/StagingArea/Data/sharedassets0.resource"
+  },
+  {
+   "compression": 8,
+   "hash": "8f59c553fa65e4c62b244f94275fdf50ef6a40e8",
+   "pkgpath": "bin/Player.elf",
+   "size": 22318968,
+   "src": "D:/Git/MIT/PlantMail/Temp/StagingArea/Player.elf",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "D:\\Git\\MIT\\PlantMail\\Assets\\Plugins\\MagicLeap\\Certificate\\mithackathon2019.cert"
+    },
+    "taildata": {
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "d3bc5481d04266bbe0dad5b6f4ea7909aef13af9",
+   "xfrm_path": "D:/Git/MIT/PlantMail/.out/.cache/release_lumin_clang-3.8_aarch64/com.company.productname-3e0b8210e67b29a3\\Player.elf-e1ea9ce5603019ac",
+   "xfrm_size": 22319726
+  },
+  {
+   "compression": 8,
+   "hash": "6429c07bbd305aa256e8c0562fba991b659c8cb2",
+   "pkgpath": "manifest.xml",
+   "size": 733,
+   "src": "D:\\Git\\MIT\\PlantMail\\Temp\\StagingArea\\manifest.xml",
+   "xfrm_flags": {
+    "manifest": {
+     "cert_hash": "226268b6853a40e48e230051b30d1936eebee389",
+     "developer_id": "06d43610-8a55-4e1f-9eff-cfa8c1c879c1"
+    }
+   },
+   "xfrm_hash": "e23ea8173df598ea3bbe578d045cd7e836614d42",
+   "xfrm_path": "D:/Git/MIT/PlantMail/.out/.cache/release_lumin_clang-3.8_aarch64/com.company.productname-3e0b8210e67b29a3\\manifest.xml-e1ea9ce5603019ac",
+   "xfrm_size": 745
+  }
+ ],
+ "pkgflags": {
+  "signed": {
+   "cert": "D:\\Git\\MIT\\PlantMail\\Assets\\Plugins\\MagicLeap\\Certificate\\mithackathon2019.cert"
+  },
+  "taildata": {
+   "devcert": "D:\\Git\\MIT\\PlantMail\\Assets\\Plugins\\MagicLeap\\Certificate\\mithackathon2019.cert",
+   "sbox": "USER",
+   "version": 3
+  }
+ }
+}
